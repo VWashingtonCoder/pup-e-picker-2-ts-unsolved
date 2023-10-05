@@ -31,7 +31,7 @@ const patchFavoriteForDog = async (id: number, isFavorite: boolean) => {
     },
     body: JSON.stringify({ isFavorite }),
   });
-  return response.json();
+  return response.status;
 };
 
 export const Requests = {
