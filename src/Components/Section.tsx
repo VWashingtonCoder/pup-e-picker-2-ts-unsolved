@@ -1,4 +1,5 @@
 import { ReactNode } from "react";
+import { useView, useDogs } from "../Providers/Contexts";
 
 export const Section = ({
   label,
@@ -8,6 +9,13 @@ export const Section = ({
   label: string;
   children: ReactNode;
 }) => {
+  const { favoriteDogs, unfavoriteDogs } = useDogs();
+  const { view, setView } = useView();
+
+  const changeView = (newView: string) => {
+    newView === view ? setView("allDogs") : setView(newView);
+  };
+
   return (
     <section id="main-section">
       <div className="container-header">
@@ -15,27 +23,27 @@ export const Section = ({
         <div className="selectors">
           {/* This should display the favorited count */}
           <div
-            className={`selector ${"active"}`}
+            className={`selector ${view === "favoriteDogs" ? "active" : ""}`}
             onClick={() => {
-              alert("click favorited");
+              changeView("favoriteDogs");
             }}
           >
-            favorited ( {0} )
+            favorited ( {favoriteDogs.length} )
           </div>
 
           {/* This should display the unfavorited count */}
           <div
-            className={`selector ${""}`}
+            className={`selector ${view === "unfavoriteDogs" ? "active" : ""}`}
             onClick={() => {
-              alert("click unfavorited");
+              changeView("unfavoriteDogs");
             }}
           >
-            unfavorited ( {10} )
+            unfavorited ( {unfavoriteDogs.length} )
           </div>
           <div
-            className={`selector ${""}`}
+            className={`selector ${view === "createDog" ? "active" : ""}`}
             onClick={() => {
-              alert("clicked create dog");
+              changeView("createDog");
             }}
           >
             create dog
