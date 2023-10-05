@@ -72,9 +72,9 @@ To get this project setup, you should:
 
 ## Showing the Correct Component
 
-- [ ] place `Dogs` inside of the `.content-container` div of the `Section` component **using React Children**
-- [ ] place `CreateDogForm` inside of the `.content-container` div of the `Section` component **using React Children**
-- [ ] you can track the state of what tab is active in your provider
+- [X] place `Dogs` inside of the `.content-container` div of the `Section` component **using React Children**
+- [X] place `CreateDogForm` inside of the `.content-container` div of the `Section` component **using React Children**
+- [X] you can track the state of what tab is active in your provider
 
 ## Navigation
 
@@ -82,35 +82,35 @@ You should use conditional rendering to show different components inside of the 
 
 ### when no tab is active
 
-- [ ] show the `Dogs` component
-- [ ] the dogs we can see should be ALL OF THE DOGS FETCHED
+- [X] show the `Dogs` component
+- [X] the dogs we can see should be ALL OF THE DOGS FETCHED
 
 ### when the `favorited` tab is active
 
-- [ ] shows the `Dogs` component
-- [ ] the dogs we can see should be ONLY THE DOGS WHERE `isFavorite` IS TRUE
+- [X] shows the `Dogs` component
+- [X] the dogs we can see should be ONLY THE DOGS WHERE `isFavorite` IS TRUE
 
 ### when the `unfavorited` tab is active
 
-- [ ] should show the `Dogs` component
-- [ ] the selected dogs should be ONLY THE DOGS WHERE `isFavorite` IS FALSE
+- [X] should show the `Dogs` component
+- [X] the selected dogs should be ONLY THE DOGS WHERE `isFavorite` IS FALSE
 
 ### when the create dog tab is active
 
-- [ ] should show the `CreateDogForm` component
-- [ ] should not show the `Dogs` component
+- [X] should show the `CreateDogForm` component
+- [X] should not show the `Dogs` component
 
 ### Tabs
 
-- [ ] Should be black when active (You can add the `active` class to it to style an active tab correctly)
-- [ ] Should be white when inactive
-- [ ] Only zero - one tab should be active at a time
-- [ ] Clicking on a tab should make it active and make all other tabs inactive
-- [ ] Clicking an Active Tab should make it inactive
+- [X] Should be black when active (You can add the `active` class to it to style an active tab correctly)
+- [X] Should be white when inactive
+- [X] Only zero - one tab should be active at a time
+- [X] Clicking on a tab should make it active and make all other tabs inactive
+- [X] Clicking an Active Tab should make it inactive
 
 ## Interacting With the API
 
-- [ ] When the component loads, you should fetch all of the dogs from the server and store them in state
+- [X] When the component loads, you should fetch all of the dogs from the server and store them in state
 - [ ] When you click on a gray heart, it should turn red and the dog's `isFavorite` property should be set to `true` in the database
 - [ ] When you click on a red heart, it should turn gray and the dog's `isFavorite` property should be set to `false` in the database
 - [ ] When you click on the trash icon, it should delete the dog from the database and show the updated list of dogs
