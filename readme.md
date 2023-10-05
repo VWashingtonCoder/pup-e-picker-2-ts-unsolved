@@ -47,17 +47,17 @@ To get this project setup, you should:
 
 ## Standard Requirements
 
-- [ ] Setup eslint
-- [ ] Pass all linting checks
+- [x] Setup eslint
+- [x] Pass all linting checks
 
 - To check if linting passes, run `npm run lint`
 
-- [ ] Format code with prettier
-- [ ] State should not be duplicated
-- [ ] Variables should be named logically
-- [ ] No unnecessary console logs
-- [ ] No commented out blocks of code (Code comments are fine)
-- [ ] Setup a github repository with your submission as the `main` branch, you will submit a link to this for grading (NOT A ZIP FILE)
+- [x] Format code with prettier
+- [x] State should not be duplicated
+- [x] Variables should be named logically
+- [x] No unnecessary console logs
+- [x] No commented out blocks of code (Code comments are fine)
+- [x] Setup a github repository with your submission as the `main` branch, you will submit a link to this for grading (NOT A ZIP FILE)
 
 ## Typescript Specific Requirements
 
@@ -72,9 +72,9 @@ To get this project setup, you should:
 
 ## Showing the Correct Component
 
-- [X] place `Dogs` inside of the `.content-container` div of the `Section` component **using React Children**
-- [X] place `CreateDogForm` inside of the `.content-container` div of the `Section` component **using React Children**
-- [X] you can track the state of what tab is active in your provider
+- [x] place `Dogs` inside of the `.content-container` div of the `Section` component **using React Children**
+- [x] place `CreateDogForm` inside of the `.content-container` div of the `Section` component **using React Children**
+- [x] you can track the state of what tab is active in your provider
 
 ## Navigation
 
@@ -82,74 +82,74 @@ You should use conditional rendering to show different components inside of the 
 
 ### when no tab is active
 
-- [X] show the `Dogs` component
-- [X] the dogs we can see should be ALL OF THE DOGS FETCHED
+- [x] show the `Dogs` component
+- [x] the dogs we can see should be ALL OF THE DOGS FETCHED
 
 ### when the `favorited` tab is active
 
-- [X] shows the `Dogs` component
-- [X] the dogs we can see should be ONLY THE DOGS WHERE `isFavorite` IS TRUE
+- [x] shows the `Dogs` component
+- [x] the dogs we can see should be ONLY THE DOGS WHERE `isFavorite` IS TRUE
 
 ### when the `unfavorited` tab is active
 
-- [X] should show the `Dogs` component
-- [X] the selected dogs should be ONLY THE DOGS WHERE `isFavorite` IS FALSE
+- [x] should show the `Dogs` component
+- [x] the selected dogs should be ONLY THE DOGS WHERE `isFavorite` IS FALSE
 
 ### when the create dog tab is active
 
-- [X] should show the `CreateDogForm` component
-- [X] should not show the `Dogs` component
+- [x] should show the `CreateDogForm` component
+- [x] should not show the `Dogs` component
 
 ### Tabs
 
-- [X] Should be black when active (You can add the `active` class to it to style an active tab correctly)
-- [X] Should be white when inactive
-- [X] Only zero - one tab should be active at a time
-- [X] Clicking on a tab should make it active and make all other tabs inactive
-- [X] Clicking an Active Tab should make it inactive
+- [x] Should be black when active (You can add the `active` class to it to style an active tab correctly)
+- [x] Should be white when inactive
+- [x] Only zero - one tab should be active at a time
+- [x] Clicking on a tab should make it active and make all other tabs inactive
+- [x] Clicking an Active Tab should make it inactive
 
 ## Interacting With the API
 
-- [X] When the component loads, you should fetch all of the dogs from the server and store them in state
-- [X] When you click on a gray heart, it should turn red and the dog's `isFavorite` property should be set to `true` in the database
-- [X] When you click on a red heart, it should turn gray and the dog's `isFavorite` property should be set to `false` in the database
-- [X] When you click on the trash icon, it should delete the dog from the database and show the updated list of dogs
-- [ ] When you create a dog, it should be added to the database
+- [x] When the component loads, you should fetch all of the dogs from the server and store them in state
+- [x] When you click on a gray heart, it should turn red and the dog's `isFavorite` property should be set to `true` in the database
+- [x] When you click on a red heart, it should turn gray and the dog's `isFavorite` property should be set to `false` in the database
+- [x] When you click on the trash icon, it should delete the dog from the database and show the updated list of dogs
+- [x] When you create a dog, it should be added to the database
 
 ## Organizing your fetch calls
 
-- [X] You should have a file called `api.ts` with a request object that contains all of your fetching functions
+- [x] You should have a file called `api.ts` with a request object that contains all of your fetching functions
   - You can completely rip this file from your previous submission if you would like
 
 ## Interacting With Fetch Calls
 
-- [X] When the component loads, you should fetch all of the dogs from the server and store them in state
-- [X] That state should be used to render all the appropriate `DogCards` on the page
-- [X] Dogs where isFavorite is true should have a red heart
-- [X] Dogs where isFavorite is false should have a gray heart
-- [X] Clicking a gray heart on a dog should turn it red and update the database to set `isFavorite` to `true`
-- [X] Clicking a red heart on a dog should turn it gray and update the database to set `isFavorite` to `false`
-- [X] Clicking the trash icon on a dog should delete it from the database and update the list of dogs on the page
-- [ ] Creating a dog should add it to the database and update the list of dogs on the page
+- [x] When the component loads, you should fetch all of the dogs from the server and store them in state
+- [x] That state should be used to render all the appropriate `DogCards` on the page
+- [x] Dogs where isFavorite is true should have a red heart
+- [x] Dogs where isFavorite is false should have a gray heart
+- [x] Clicking a gray heart on a dog should turn it red and update the database to set `isFavorite` to `true`
+- [x] Clicking a red heart on a dog should turn it gray and update the database to set `isFavorite` to `false`
+- [x] Clicking the trash icon on a dog should delete it from the database and update the list of dogs on the page
+- [x] Creating a dog should add it to the database and update the list of dogs on the page
 
 ## Loading States
 
 If the data is still loading then...
 
-- [ ] All inputs should be disabled
-- [ ] Buttons should be disabled
+- [x] All inputs should be disabled
+- [x] Buttons should be disabled
 
 ## What happens when you submit the form
 
-- [ ] When you submit the form, it should create a new dog in the database
-- [ ] If you navigate to the `all` tab, you should see the new dog in the list of dogs
-- [ ] If you navigate to the `favorited` tab, you should NOT see the new dog in the list of dogs
-- [ ] If you navigate to the `unfavorited` tab, you should see the new dog in the list of dogs
-- [ ] After the submission the form should be cleared, and the select should return to the default
-- [ ] After submitting a toast notification from `react-hot-toast` should appear saying "Dog Created"
+- [x] When you submit the form, it should create a new dog in the database
+- [x] If you navigate to the `all` tab, you should see the new dog in the list of dogs
+- [x] If you navigate to the `favorited` tab, you should NOT see the new dog in the list of dogs
+- [x] If you navigate to the `unfavorited` tab, you should see the new dog in the list of dogs
+- [x] After the submission the form should be cleared, and the select should return to the default
+- [x] After submitting a toast notification from `react-hot-toast` should appear saying "Dog Created"
 
 ## Performance
 
-- [X] Clicking a heart or trash icon should trigger QUICKLY and not cause any loading UI.
-- [ ] The create dog form should still submit pessimistically and provide a toast that it is done afterwards
-- [ ] The create dog form should also be disabled according to the loading state of the fetch call
+- [x] Clicking a heart or trash icon should trigger QUICKLY and not cause any loading UI.
+- [x] The create dog form should still submit pessimistically and provide a toast that it is done afterwards
+- [x] The create dog form should also be disabled according to the loading state of the fetch call

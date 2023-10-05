@@ -1,1 +1,158 @@
-{"dogs":[{"name":"Gladyce","image":"/assets/blue-heeler.png","description":"Granite sievert zowie fugit Home occaecati untried female","isFavorite":true,"id":0},{"name":"Isaac","image":"/assets/cowardly.png","description":"Gasoline foreshorten nam Virginia Assistant Polestar glass puny","isFavorite":true,"id":1},{"name":"Shaun","image":"/assets/cowardly.png","description":"than Recumbent how tap Elegant indexing empower","isFavorite":true,"id":2},{"name":"Florence","image":"/assets/cowardly.png","description":"Specialist maximize Response Producer transition Country violet","isFavorite":false,"id":3},{"name":"Zoie","image":"/assets/chihuahua.avif","description":"digital cultivate bah Fantastic female South Somoni initiatives","isFavorite":true,"id":4},{"name":"Rebeca","image":"/assets/corgi.png","description":"Fiat Recumbent incremental monitor Southeast which backing","isFavorite":false,"id":5},{"name":"Riley","image":"/assets/blue-heeler.png","description":"shake male Kia annually Southeast Factors Southeast Hat","isFavorite":false,"id":6},{"name":"Emiliano","image":"/assets/boxer.png","description":"Jast local Utah South Metal Moldova Northeast envisioneer","isFavorite":false,"id":7},{"name":"Jacey","image":"/assets/blue-heeler.png","description":"interfaces reinvent East nihil methodical perfumed optio","isFavorite":false,"id":8},{"name":"Lloyd","image":"/assets/blue-heeler.png","description":"Brand aut Baby untrue Soul","isFavorite":false,"id":9},{"name":"Shanny","image":"/assets/dalmation.png","description":"Pants male Sports Bicycle Licensed transgender ut","isFavorite":false,"id":10},{"name":"Beau","image":"/assets/boxer.png","description":"male withdrawal invoice Music fawn Extended Representative Cyclocross","isFavorite":false,"id":11},{"name":"Lucius","image":"/assets/corgi.png","description":"Markets Lake hmph Grocery transitional Technician Associate Avon","isFavorite":true,"id":12},{"name":"Payton","image":"/assets/blue-heeler.png","description":"coke Carolina Barbados marionberry pricing","isFavorite":true,"id":13},{"name":"Weston","image":"/assets/cowardly.png","description":"Peru drive Martin Branding Account","isFavorite":false,"id":14},{"name":"Gideon","image":"/assets/chihuahua.avif","description":"Global Tenge Factors bypassing payment","isFavorite":false,"id":15},{"name":"Blanche","image":"/assets/cowardly.png","description":"Latin afterwards Palestine female hastily HTTP Handcrafted","isFavorite":true,"id":16},{"name":"Sebastian","image":"/assets/cowardly.png","description":"gosh hertz male Rock Borders","isFavorite":false,"id":17},{"name":"Darrion","image":"/assets/corgi.png","description":"Comoros male Berkshire copying lime","isFavorite":true,"id":18},{"name":"Kacie","image":"/assets/corgi.png","description":"eyeballs SAS Implementation Southwest Factors","isFavorite":false,"id":19}]}
+{
+  "dogs": [
+    {
+      "name": "Gladyce",
+      "image": "/assets/blue-heeler.png",
+      "description": "Granite sievert zowie fugit Home occaecati untried female",
+      "isFavorite": true,
+      "id": 0
+    },
+    {
+      "name": "Isaac",
+      "image": "/assets/cowardly.png",
+      "description": "Gasoline foreshorten nam Virginia Assistant Polestar glass puny",
+      "isFavorite": true,
+      "id": 1
+    },
+    {
+      "name": "Shaun",
+      "image": "/assets/cowardly.png",
+      "description": "than Recumbent how tap Elegant indexing empower",
+      "isFavorite": true,
+      "id": 2
+    },
+    {
+      "name": "Florence",
+      "image": "/assets/cowardly.png",
+      "description": "Specialist maximize Response Producer transition Country violet",
+      "isFavorite": false,
+      "id": 3
+    },
+    {
+      "name": "Zoie",
+      "image": "/assets/chihuahua.avif",
+      "description": "digital cultivate bah Fantastic female South Somoni initiatives",
+      "isFavorite": true,
+      "id": 4
+    },
+    {
+      "name": "Rebeca",
+      "image": "/assets/corgi.png",
+      "description": "Fiat Recumbent incremental monitor Southeast which backing",
+      "isFavorite": false,
+      "id": 5
+    },
+    {
+      "name": "Riley",
+      "image": "/assets/blue-heeler.png",
+      "description": "shake male Kia annually Southeast Factors Southeast Hat",
+      "isFavorite": false,
+      "id": 6
+    },
+    {
+      "name": "Emiliano",
+      "image": "/assets/boxer.png",
+      "description": "Jast local Utah South Metal Moldova Northeast envisioneer",
+      "isFavorite": false,
+      "id": 7
+    },
+    {
+      "name": "Jacey",
+      "image": "/assets/blue-heeler.png",
+      "description": "interfaces reinvent East nihil methodical perfumed optio",
+      "isFavorite": false,
+      "id": 8
+    },
+    {
+      "name": "Lloyd",
+      "image": "/assets/blue-heeler.png",
+      "description": "Brand aut Baby untrue Soul",
+      "isFavorite": false,
+      "id": 9
+    },
+    {
+      "name": "Shanny",
+      "image": "/assets/dalmation.png",
+      "description": "Pants male Sports Bicycle Licensed transgender ut",
+      "isFavorite": false,
+      "id": 10
+    },
+    {
+      "name": "Beau",
+      "image": "/assets/boxer.png",
+      "description": "male withdrawal invoice Music fawn Extended Representative Cyclocross",
+      "isFavorite": false,
+      "id": 11
+    },
+    {
+      "name": "Lucius",
+      "image": "/assets/corgi.png",
+      "description": "Markets Lake hmph Grocery transitional Technician Associate Avon",
+      "isFavorite": true,
+      "id": 12
+    },
+    {
+      "name": "Payton",
+      "image": "/assets/blue-heeler.png",
+      "description": "coke Carolina Barbados marionberry pricing",
+      "isFavorite": true,
+      "id": 13
+    },
+    {
+      "name": "Weston",
+      "image": "/assets/cowardly.png",
+      "description": "Peru drive Martin Branding Account",
+      "isFavorite": false,
+      "id": 14
+    },
+    {
+      "name": "Gideon",
+      "image": "/assets/chihuahua.avif",
+      "description": "Global Tenge Factors bypassing payment",
+      "isFavorite": false,
+      "id": 15
+    },
+    {
+      "name": "Blanche",
+      "image": "/assets/cowardly.png",
+      "description": "Latin afterwards Palestine female hastily HTTP Handcrafted",
+      "isFavorite": true,
+      "id": 16
+    },
+    {
+      "name": "Sebastian",
+      "image": "/assets/cowardly.png",
+      "description": "gosh hertz male Rock Borders",
+      "isFavorite": false,
+      "id": 17
+    },
+    {
+      "name": "Darrion",
+      "image": "/assets/corgi.png",
+      "description": "Comoros male Berkshire copying lime",
+      "isFavorite": true,
+      "id": 18
+    },
+    {
+      "name": "Kacie",
+      "image": "/assets/corgi.png",
+      "description": "eyeballs SAS Implementation Southwest Factors",
+      "isFavorite": false,
+      "id": 19
+    },
+    {
+      "image": "/assets/blue-heeler.png",
+      "name": "Kyle",
+      "description": "Super good",
+      "isFavorite": true,
+      "id": 20
+    },
+    {
+      "image": "/assets/chihuahua.avif",
+      "name": "Kyle",
+      "description": "Just a good boy",
+      "isFavorite": true,
+      "id": 21
+    }
+  ]
+}
