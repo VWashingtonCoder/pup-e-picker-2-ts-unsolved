@@ -111,25 +111,25 @@ You should use conditional rendering to show different components inside of the 
 ## Interacting With the API
 
 - [X] When the component loads, you should fetch all of the dogs from the server and store them in state
-- [ ] When you click on a gray heart, it should turn red and the dog's `isFavorite` property should be set to `true` in the database
-- [ ] When you click on a red heart, it should turn gray and the dog's `isFavorite` property should be set to `false` in the database
-- [ ] When you click on the trash icon, it should delete the dog from the database and show the updated list of dogs
+- [X] When you click on a gray heart, it should turn red and the dog's `isFavorite` property should be set to `true` in the database
+- [X] When you click on a red heart, it should turn gray and the dog's `isFavorite` property should be set to `false` in the database
+- [X] When you click on the trash icon, it should delete the dog from the database and show the updated list of dogs
 - [ ] When you create a dog, it should be added to the database
 
 ## Organizing your fetch calls
 
-- [ ] You should have a file called `api.ts` with a request object that contains all of your fetching functions
+- [X] You should have a file called `api.ts` with a request object that contains all of your fetching functions
   - You can completely rip this file from your previous submission if you would like
 
 ## Interacting With Fetch Calls
 
-- [ ] When the component loads, you should fetch all of the dogs from the server and store them in state
-- [ ] That state should be used to render all the appropriate `DogCards` on the page
-- [ ] Dogs where isFavorite is true should have a red heart
-- [ ] Dogs where isFavorite is false should have a gray heart
-- [ ] Clicking a gray heart on a dog should turn it red and update the database to set `isFavorite` to `true`
-- [ ] Clicking a red heart on a dog should turn it gray and update the database to set `isFavorite` to `false`
-- [ ] Clicking the trash icon on a dog should delete it from the database and update the list of dogs on the page
+- [X] When the component loads, you should fetch all of the dogs from the server and store them in state
+- [X] That state should be used to render all the appropriate `DogCards` on the page
+- [X] Dogs where isFavorite is true should have a red heart
+- [X] Dogs where isFavorite is false should have a gray heart
+- [X] Clicking a gray heart on a dog should turn it red and update the database to set `isFavorite` to `true`
+- [X] Clicking a red heart on a dog should turn it gray and update the database to set `isFavorite` to `false`
+- [X] Clicking the trash icon on a dog should delete it from the database and update the list of dogs on the page
 - [ ] Creating a dog should add it to the database and update the list of dogs on the page
 
 ## Loading States
@@ -150,6 +150,6 @@ If the data is still loading then...
 
 ## Performance
 
-- [ ] Clicking a heart or trash icon should trigger QUICKLY and not cause any loading UI.
+- [X] Clicking a heart or trash icon should trigger QUICKLY and not cause any loading UI.
 - [ ] The create dog form should still submit pessimistically and provide a toast that it is done afterwards
 - [ ] The create dog form should also be disabled according to the loading state of the fetch call
