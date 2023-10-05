@@ -1,13 +1,14 @@
 import { ReactNode, createContext, useState, useEffect } from "react";
 import { Dog } from "../types";
 import { Requests } from "../api";
-import { set } from "zod";
+import toast from "react-hot-toast";
 
 type DogContextType = {
   dogs: Dog[];
-  setDogs: (dogs: Dog[]) => void;
+  isLoading: boolean;
   favoriteDogs: Dog[];
   unfavoriteDogs: Dog[];
+  setDogs: (dogs: Dog[]) => void;
   createDog: (newDog: Omit<Dog, "id">) => void;
   trashDog: (id: number) => void;
   favoriteDog: (id: number) => void;
@@ -20,18 +21,28 @@ export const DogContext = createContext<DogContextType>({} as DogContextType);
 
 export const DogProvider = ({ children }: { children: ReactNode }) => {
   const [dogs, setDogs] = useState<Dog[]>([]);
+  const [isLoading, setIsLoading] = useState<boolean>(false);
   const favoriteDogs = dogs.filter((dog) => dog.isFavorite);
   const unfavoriteDogs = dogs.filter((dog) => !dog.isFavorite);
 
+  const refetchDogs = () => {
+    getAllDogs()
+      .then((dogs) => setDogs(dogs as Dog[]))
+      .catch((error) => console.log("error", error));
+  };
+
   const createDog = (newDog: Omit<Dog, "id">) => {
-    const newId = dogs[dogs.length - 1].id + 1;
-    setDogs([...dogs, { ...newDog, id: newId }]);
+    setIsLoading(true);
 
     postDog(newDog)
       .then((status) => {
-        if (status !== 201) setDogs(dogs);
+        if (status === 201) {
+          refetchDogs();
+          toast.success("Dog Created!");
+        }
       })
-      .catch((error) => console.log("error", error));
+      .catch((error) => console.log("error", error))
+      .finally(() => setIsLoading(false));
   };
 
   const trashDog = (id: number) => {
@@ -70,19 +81,12 @@ export const DogProvider = ({ children }: { children: ReactNode }) => {
       .catch((error) => console.log("error", error));
   };
 
-  useEffect(() => {
-    getAllDogs()
-      .then((dogs) => {
-        setDogs(dogs as Dog[]);
-      })
-      .catch((error) => {
-        console.log("error", error);
-      });
-  }, []);
+  useEffect(() => refetchDogs(), []);
 
   const providerValue = {
     dogs,
     setDogs,
+    isLoading,
     favoriteDogs,
     unfavoriteDogs,
     createDog,

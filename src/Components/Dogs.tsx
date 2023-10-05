@@ -2,8 +2,16 @@ import { useDogs, useView } from "../Providers/Contexts";
 import { DogCard } from "./DogCard";
 
 export const Dogs = () => {
-  const { dogs, favoriteDogs, unfavoriteDogs } = useDogs();
-  const { view, isLoading, setIsLoading } = useView();
+  const {
+    dogs,
+    favoriteDogs,
+    unfavoriteDogs,
+    isLoading,
+    favoriteDog,
+    unfavoriteDog,
+    trashDog,
+  } = useDogs();
+  const { view } = useView();
   const currentDogs =
     view === "allDogs"
       ? dogs
@@ -11,34 +19,16 @@ export const Dogs = () => {
       ? favoriteDogs
       : unfavoriteDogs;
 
-  const handleTrashIconClick = async (id: number) => {
-    setIsLoading(true);
-    // fill out method
-    setIsLoading(false);
-  };
-
-  const handleEmptyHeartClick = async (id: number) => {
-    setIsLoading(true);
-    // fill out method
-    setIsLoading(false);
-  };
-
-  const handleHeartClick = async (id: number) => {
-    setIsLoading(true);
-    // fill out method
-    setIsLoading(false);
-  };
-
   return (
     <>
       {currentDogs.map((dog) => (
         <DogCard
           key={dog.id}
           dog={dog}
-          onTrashIconClick={() => {}}
-          onEmptyHeartClick={() => {}}
-          onHeartClick={() => {}}
-          isLoading={false}
+          onTrashIconClick={() => trashDog(dog.id)}
+          onEmptyHeartClick={() => favoriteDog(dog.id)}
+          onHeartClick={() => unfavoriteDog(dog.id)}
+          isLoading={isLoading}
         />
       ))}
     </>
